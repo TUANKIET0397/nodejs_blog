@@ -1,0 +1,31 @@
+{
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "Tuan Kiet",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --inspect index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TUANKIET0397/nodejs_blog.git"
+    },
+    "keywords": [
+        "hello",
+        "world",
+        "nodejs"
+    ],
+    "author": "TnKiet",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/TUANKIET0397/nodejs_blog/issues"
+    },
+    "homepage": "https://github.com/TUANKIET0397/nodejs_blog#readme",
+    "dependencies": {
+        "express": "^5.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.10"
+    }
+}
