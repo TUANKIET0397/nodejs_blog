@@ -1,0 +1,7 @@
+@use "variables";
+
+h1 {
+    color: variables.$red-color;
+    font-size: 1rem;
+    background-color: variables.$green-color;
+}
