@@ -9,3 +9,7 @@ h1 {
 body {
     box-sizing: border-box;
 }
+
+h1:before {
+    content: "Say hello to SCSS";
+}
