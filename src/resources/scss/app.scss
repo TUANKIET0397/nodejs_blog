@@ -1,4 +1,4 @@
-@use "variables";
+@use 'variables';
 
 h1 {
     color: variables.$red-color;
@@ -11,5 +11,9 @@ body {
 }
 
 h1:before {
-    content: "Say hello to SCSS";
+    content: 'Say hello to SCSS';
+}
+
+html {
+    font-size: 16px;
 }
