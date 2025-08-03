@@ -2,9 +2,8 @@ const express = require('express');
 // const app = express() đã nạp ở file index rồi
 const router = express.Router();
 
-const siteController = require('../app/controllers/SiteController');
+const courseController = require('../app/controllers/CourseController');
 
-router.get('/search', siteController.search);
-router.get('/', siteController.index);
+router.get('/:slug', courseController.show);
 
 module.exports = router;

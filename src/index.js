@@ -7,6 +7,10 @@ const port = 3000;
 
 // khi gõ tìm thư mục thì file index.js sẽ được tự động tìm
 const route = require('./routes');
+const db = require('./config/db');
+
+// connect to db
+db.connect();
 
 // middleware
 app.use(express.urlencoded({ extended: true })); // xử lý dữ liệu từ form
@@ -22,12 +26,12 @@ app.use(morgan('combined'));
 app.engine('.hbs', engine({ extname: '.hbs' }));
 app.set('view engine', '.hbs');
 // set views directory - render xong nhảy vào đây tìm
-app.set('views', path.join(__dirname, 'resources/views'));
+app.set('views', path.join(__dirname, 'resources', 'views'));
 
 // nạp route vào app
 route(app);
 
 // start 1 webserver -> nạp all data vào RAM -> action ---- dispathcher ----function handler
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`);
+    console.log(`App listening on port ${port}`);
 });
