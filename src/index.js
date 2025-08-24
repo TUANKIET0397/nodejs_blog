@@ -3,7 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const { engine } = require('express-handlebars');
 const app = express();
-const port = 3000;
+const port = 1234;
 
 // khi gõ tìm thư mục thì file index.js sẽ được tự động tìm
 const route = require('./routes');
